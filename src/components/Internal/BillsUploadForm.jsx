@@ -309,8 +309,6 @@ const styles = {
   },
 };
 
-
-
 export default function BillsUploadForm({
   authToken,
   name,
@@ -800,11 +798,7 @@ export default function BillsUploadForm({
                     value={bill.amount}
                     disabled={loading}
                     onChange={(e) =>
-                      handleBillFieldChange(
-                        bill.uid,
-                        "amount",
-                        e.target.value,
-                      )
+                      handleBillFieldChange(bill.uid, "amount", e.target.value)
                     }
                     onWheel={(e) => e.target.blur()}
                     placeholder="e.g. 500"

@@ -172,7 +172,8 @@ const SponsorForm = () => {
               title="Download Sponsorship Brochure"
               onClick={(e) => {
                 if (
-                  e.currentTarget.getAttribute("href") === "#download-brochure" ||
+                  e.currentTarget.getAttribute("href") ===
+                    "#download-brochure" ||
                   e.currentTarget.getAttribute("href") === "#"
                 ) {
                   e.preventDefault();
@@ -206,7 +207,9 @@ const SponsorForm = () => {
             <div className="ui-subcard-header">
               <span className="ui-subcard-number">01</span>
               <FiUser size={16} color="#eb0028" />
-              <h3 className="ui-subcard-title">Organization & Representative</h3>
+              <h3 className="ui-subcard-title">
+                Organization & Representative
+              </h3>
             </div>
 
             <Input
@@ -340,7 +343,8 @@ const SponsorForm = () => {
                 helperText={
                   formData.tier ? (
                     <span>
-                      Amount is locked to the <strong>{formData.tier}</strong> tier.{" "}
+                      Amount is locked to the <strong>{formData.tier}</strong>{" "}
+                      tier.{" "}
                       <button
                         type="button"
                         onClick={handleClearTier}

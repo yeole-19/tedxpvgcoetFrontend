@@ -61,7 +61,9 @@ const Input = forwardRef(
 
         <div className="ui-input-wrapper">
           {activePrefixIcon && (
-            <span className="ui-input-icon ui-input-prefix">{activePrefixIcon}</span>
+            <span className="ui-input-icon ui-input-prefix">
+              {activePrefixIcon}
+            </span>
           )}
           <input
             ref={ref}
