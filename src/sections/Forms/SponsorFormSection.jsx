@@ -167,23 +167,12 @@ const SponsorForm = () => {
           <div className="ui-header-actions">
             <span className="ui-badge">TEDxPVGCOET 2026</span>
             <a
-              href="#download-brochure"
+              href="/Sponsorship_Brochure.pdf"
+              download="TEDxPVGCOET_Sponsorship_Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="ui-brochure-btn"
               title="Download Sponsorship Brochure"
-              onClick={(e) => {
-                if (
-                  e.currentTarget.getAttribute("href") ===
-                    "#download-brochure" ||
-                  e.currentTarget.getAttribute("href") === "#"
-                ) {
-                  e.preventDefault();
-                  setStatus({
-                    type: "info",
-                    message:
-                      "The 2026 Sponsorship Brochure will be available for download here shortly!",
-                  });
-                }
-              }}
             >
               <FiDownload size={13} className="ui-brochure-icon" />
               <span>Download Brochure</span>
