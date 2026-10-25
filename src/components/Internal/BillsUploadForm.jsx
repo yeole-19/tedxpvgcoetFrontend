@@ -10,6 +10,7 @@ import {
   FormGrid,
   FormField,
 } from "../ui";
+import PwaInstallButton from "./PwaInstallButton";
 
 const styles = {
   wrapper: {
@@ -47,8 +48,8 @@ const styles = {
   },
   headerRow: {
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
+    flexDirection: "column",
+    gap: "16px",
     marginBottom: "32px",
   },
   title: {
@@ -335,11 +336,25 @@ export default function BillsUploadForm({
         });
       } else {
         const sizeMB = file.size / (1024 * 1024);
+        if (sizeMB > 15) {
+          setAutoStatus({
+            type: "error",
+            message:
+              "PDF file is too large. Please upload a file smaller than 15MB.",
+          });
+          e.target.value = "";
+          return;
+        }
+        const mimeType =
+          file.type ||
+          (file.name.toLowerCase().endsWith(".pdf")
+            ? "application/pdf"
+            : "application/octet-stream");
         const reader = new FileReader();
         reader.onloadend = () => {
           handleBillFieldChange(uid, "image", {
             fileName: file.name,
-            mimeType: file.type,
+            mimeType: mimeType,
             base64: reader.result,
             sizeMB: sizeMB,
           });
@@ -361,10 +376,17 @@ export default function BillsUploadForm({
         });
         return;
       }
+      if (!b.reason || !b.reason.trim()) {
+        setAutoStatus({
+          type: "error",
+          message: `Please enter the Reason / Description for Bill Item #${i + 1}.`,
+        });
+        return;
+      }
       if (!b.image) {
         setAutoStatus({
           type: "error",
-          message: `Please attach the photo receipt for Bill Item #${i + 1}.`,
+          message: `Please attach the receipt (photo or PDF) for Bill Item #${i + 1}.`,
         });
         return;
       }
@@ -380,6 +402,17 @@ export default function BillsUploadForm({
 
     let successCount = 0;
     let failMsgs = [];
+
+    const d = new Date();
+    const timeString = d.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+    const dateString = d.toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+    });
+    const batchTimestamp = `${timeString}, ${dateString}`;
 
     let API_URL = "https://www.backend.tedxpvgcoet.in";
     try {
@@ -401,11 +434,15 @@ export default function BillsUploadForm({
           team: team,
           name: name,
           amount: bill.amount,
-          reason: bill.reason || "No specific reason provided.",
+          reason: bill.reason.trim(),
           gstCategory: bill.gstCategory,
           imageFile: bill.image.base64,
           fileName: bill.image.fileName,
           mimeType: bill.image.mimeType,
+          batchTitle:
+            bills.length > 1
+              ? `Multiple Bills Uploaded by ${name} (${team}) at ${batchTimestamp}`
+              : null,
         };
 
         const res = await fetch(`${API_URL}/bills`, {
@@ -521,6 +558,11 @@ export default function BillsUploadForm({
             .bills-card {
                 padding: 24px 16px !important;
             }
+            .bills-header {
+                flex-direction: column !important;
+                gap: 16px !important;
+                align-items: flex-start !important;
+            }
         }
       `}</style>
 
@@ -535,14 +577,14 @@ export default function BillsUploadForm({
 
       <div style={styles.pageContainer}>
         <div style={styles.card} className="bills-card">
-          <div style={styles.headerRow}>
+          <div style={styles.headerRow} className="bills-header">
             <div>
               <h1 style={styles.title}>Internal Bills</h1>
               <p style={styles.subtitle}>
                 Submit your purchase receipts seamlessly
               </p>
             </div>
-            <div style={{ display: "flex", gap: "8px" }}>
+            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
               {onBack && (
                 <button
                   type="button"
@@ -558,7 +600,7 @@ export default function BillsUploadForm({
                   }}
                   title="Back to dashboard"
                 >
-                  ← Back
+                  Back
                 </button>
               )}
               {onLogout && (
@@ -579,6 +621,7 @@ export default function BillsUploadForm({
                   Sign Out
                 </button>
               )}
+              <PwaInstallButton />
             </div>
           </div>
 
@@ -713,7 +756,8 @@ export default function BillsUploadForm({
 
                 <div style={{ marginBottom: "20px" }}>
                   <Textarea
-                    label="Reason / Description (Optional)"
+                    label="Reason / Description"
+                    required
                     value={bill.reason}
                     disabled={loading}
                     onChange={(e) =>
@@ -725,11 +769,11 @@ export default function BillsUploadForm({
                   />
                 </div>
 
-                <FormField label="Bill Receipt Photo" required>
+                <FormField label="Bill Receipt (Photo or PDF)" required>
                   <input
                     id={`file-${bill.uid}`}
                     type="file"
-                    accept="image/*"
+                    accept="image/*,.pdf"
                     disabled={loading}
                     onChange={(e) => handleFileChange(e, bill.uid)}
                     style={{ display: "none" }}
@@ -737,7 +781,7 @@ export default function BillsUploadForm({
                   <input
                     id={`file-cam-${bill.uid}`}
                     type="file"
-                    accept="image/*"
+                    accept="image/*,.pdf"
                     capture="environment"
                     disabled={loading}
                     onChange={(e) => handleFileChange(e, bill.uid)}
@@ -771,7 +815,7 @@ export default function BillsUploadForm({
                             background: loading ? "#666" : "#e81b2a",
                           }}
                         >
-                          Choose File
+                          Choose Photo or PDF
                         </span>
                         <span
                           style={{
@@ -814,7 +858,7 @@ export default function BillsUploadForm({
                               background: loading ? "#666" : "#444",
                             }}
                           >
-                            Gallery
+                            Files / PDF
                           </span>
                         </div>
 
@@ -860,11 +904,29 @@ export default function BillsUploadForm({
                         opacity: loading ? 0.5 : 1,
                       }}
                     >
-                      <img
-                        src={bill.image.base64}
-                        alt="preview"
-                        style={styles.imageThumb}
-                      />
+                      {bill.image.mimeType === "application/pdf" ? (
+                        <div
+                          style={{
+                            ...styles.imageThumb,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            background: "rgba(232, 27, 42, 0.1)",
+                            fontSize: "0.7rem",
+                            fontWeight: "800",
+                            color: "#e81b2a",
+                            letterSpacing: "0.5px",
+                          }}
+                        >
+                          PDF
+                        </div>
+                      ) : (
+                        <img
+                          src={bill.image.base64}
+                          alt="preview"
+                          style={styles.imageThumb}
+                        />
+                      )}
                       <div style={{ flex: 1, overflow: "hidden" }}>
                         <div style={styles.imageThumbName}>
                           {bill.image.fileName}
@@ -891,7 +953,7 @@ export default function BillsUploadForm({
                                 .click()
                             }
                           >
-                            Change Photo
+                            Change File
                           </div>
 
                           <div
@@ -904,13 +966,17 @@ export default function BillsUploadForm({
                             onClick={() => {
                               const link = document.createElement("a");
                               link.href = bill.image.base64;
-                              link.download = `receipt_${Date.now()}.jpg`;
+                              link.download =
+                                bill.image.fileName ||
+                                (bill.image.mimeType === "application/pdf"
+                                  ? `receipt_${Date.now()}.pdf`
+                                  : `receipt_${Date.now()}.jpg`);
                               document.body.appendChild(link);
                               link.click();
                               document.body.removeChild(link);
                             }}
                           >
-                            Save Photo
+                            Save File
                           </div>
                           {bill.image.sizeMB > 5 && (
                             <span

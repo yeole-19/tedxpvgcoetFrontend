@@ -1,0 +1,158 @@
+.theseus-speakers {
+  padding: 4rem 2rem;
+  color: #fff;
+  background-color: #171717;
+  background-image:
+    radial-gradient(circle at top left, rgb(255 0 0 / 23%), transparent 17%),
+    radial-gradient(circle at 95% 30%, rgb(255 0 0 / 23%), transparent 17%),
+    radial-gradient(circle at 0% 60%, rgb(255 0 0 / 23%), transparent 17%),
+    radial-gradient(circle at 90% 96%, rgb(255 0 0 / 23%), transparent 17%);
+  background-repeat: no-repeat;
+}
+
+.theseus-speakers__header {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.theseus-speakers__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  font-family: "Kantumruy Pro", sans-serif;
+  line-height: 1.2;
+}
+
+.theseus-speakers__title span:first-child {
+  color: #fff;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.theseus-speakers__title span:last-child {
+  color: #e10600;
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+.theseus-speakers__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 400px);
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.theseus-speakers__card {
+  width: 100%;
+  min-width: 0;
+}
+
+.theseus-speakers__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+}
+
+.theseus-speakers__photo img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin-top: 0.75rem;
+}
+
+.theseus-speakers__image-frame--trimmed {
+  position: relative;
+  width: min(75%, 262.5px);
+  aspect-ratio: 3 / 4;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.theseus-speakers__image-frame--trimmed img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  object-fit: unset;
+  transform: translateX(-50%);
+}
+
+.theseus-speakers__category {
+  margin: 0;
+  color: #fff;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .theseus-speakers__header {
+    padding: 3rem 1rem;
+  }
+
+  .theseus-speakers__title span:first-child {
+    font-size: 2.7rem;
+  }
+
+  .theseus-speakers__title span:last-child {
+    font-size: 4.5rem;
+  }
+
+  .theseus-speakers__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .theseus-speakers__card {
+    min-height: 450px;
+  }
+
+  .theseus-speakers__photo {
+    min-height: 450px;
+    height: 100%;
+  }
+
+  .theseus-speakers__photo img {
+    max-width: 380px;
+  }
+
+  .theseus-speakers__image-frame--trimmed {
+    width: min(75%, 285px);
+  }
+
+  .theseus-speakers__category {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .theseus-speakers__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .theseus-speakers {
+    padding: 3rem 1rem;
+  }
+
+  .theseus-speakers__grid {
+    gap: 2rem;
+  }
+}
