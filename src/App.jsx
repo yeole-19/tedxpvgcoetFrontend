@@ -32,7 +32,8 @@ inject();
 function App() {
   const location = useLocation();
   const isShipRoute = location.pathname === "/ship";
-  const isTicketRoute = location.pathname === "/ticket" || location.pathname === "/tickets";
+  const isTicketRoute =
+    location.pathname === "/ticket" || location.pathname === "/tickets";
   const [showIntro, setShowIntro] = useState(() => {
     return sessionStorage.getItem("tedxIntroShown") !== "true";
   });
