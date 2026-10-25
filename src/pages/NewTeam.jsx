@@ -6,7 +6,7 @@ import {
   FaBriefcase,
   FaTimes,
   FaChevronDown,
-  FaChevronUp
+  FaChevronUp,
 } from "react-icons/fa";
 import FooterSection from "../sections/Common/FooterSection";
 import "./NewTeam.css";
@@ -108,34 +108,38 @@ const committeeTeamsData = {
       {
         name: "Omkar Hokarne",
         role: "Licensee, Organizer",
-        quote: "Leadership is not about being in the spotlight; it is about building the stage where transformative ideas can shine.",
+        quote:
+          "Leadership is not about being in the spotlight; it is about building the stage where transformative ideas can shine.",
         image: omkarImg,
         social: {
           linkedin: "https://www.linkedin.com/in/omkar-hokarne-0a15aa224/",
-          instagram: "https://www.instagram.com/_omkar_hokarne"
-        }
+          instagram: "https://www.instagram.com/_omkar_hokarne",
+        },
       },
       {
         name: "Lakshmikant Chaudhari",
         role: "Co Organizer",
-        quote: "True harmony in a team is achieved when distinct perspectives converge toward a shared, audacious purpose.",
+        quote:
+          "True harmony in a team is achieved when distinct perspectives converge toward a shared, audacious purpose.",
         image: lakshmikantImg,
         social: {
-          linkedin: "https://www.linkedin.com/in/lakshmikant-chaudhari-506453285/",
-          instagram: "https://www.instagram.com/laksh.me.kant_c"
-        }
+          linkedin:
+            "https://www.linkedin.com/in/lakshmikant-chaudhari-506453285/",
+          instagram: "https://www.instagram.com/laksh.me.kant_c",
+        },
       },
       {
         name: "Afaan Shaikh",
         role: "Treasurer",
-        quote: "Behind every grand vision lies the discipline to sustain it, balancing bold ambition with mindful precision.",
+        quote:
+          "Behind every grand vision lies the discipline to sustain it, balancing bold ambition with mindful precision.",
         image: afaanImg,
         social: {
           linkedin: "https://www.linkedin.com/in/afaanshaikh/",
-          instagram: "https://www.instagram.com/instashebang"
-        }
-      }
-    ]
+          instagram: "https://www.instagram.com/instashebang",
+        },
+      },
+    ],
   },
   dnp: {
     title: "Design & Production",
@@ -144,83 +148,92 @@ const committeeTeamsData = {
       {
         name: "Avanti Satpute",
         role: "Lead",
-        quote: "Design is the silent ambassador of our ideas, translating abstract imagination into tangible wonder.",
+        quote:
+          "Design is the silent ambassador of our ideas, translating abstract imagination into tangible wonder.",
         image: avantiImg,
         social: {
           linkedin: "https://www.linkedin.com/in/avanti-satpute-b35494317/",
-          instagram: "https://www.instagram.com/ss_avantii"
-        }
+          instagram: "https://www.instagram.com/ss_avantii",
+        },
       },
       {
         name: "Devesh Bhavsar",
         role: "Lead",
-        quote: "Crafting an atmosphere is about invoking emotion before a single speaker even utters a word.",
+        quote:
+          "Crafting an atmosphere is about invoking emotion before a single speaker even utters a word.",
         image: deveshImg,
         social: {
           linkedin: "https://www.linkedin.com/in/devesh-bhavsar-77a370329",
-          instagram: "https://www.instagram.com/kaundevesh"
-        }
+          instagram: "https://www.instagram.com/kaundevesh",
+        },
       },
       {
         name: "Sutirth Doshi",
         role: "Prod. Incharge",
-        quote: "Precision in the shadows is what allows brilliance to unfold effortlessly under the stage lights.",
+        quote:
+          "Precision in the shadows is what allows brilliance to unfold effortlessly under the stage lights.",
         image: sutirthImg,
         social: {
           linkedin: "https://www.linkedin.com/in/sutirthdoshi",
-          instagram: "https://www.instagram.com/sutirthdoshi"
-        }
+          instagram: "https://www.instagram.com/sutirthdoshi",
+        },
       },
       {
         name: "Priya Rangapure",
         role: "Member",
-        quote: "Every color palette and curve holds a narrative waiting to resonate with the observant mind.",
+        quote:
+          "Every color palette and curve holds a narrative waiting to resonate with the observant mind.",
         image: priyaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/priya-rangapure/",
-          instagram: "https://instagram.com/priafilms"
-        }
+          instagram: "https://instagram.com/priafilms",
+        },
       },
       {
         name: "Hridaya Khare",
         role: "Member",
-        quote: "Creativity is intelligence having fun while giving form to the unspoken thoughts of our generation.",
+        quote:
+          "Creativity is intelligence having fun while giving form to the unspoken thoughts of our generation.",
         image: hridayaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/hridaya-khare-93aa38377",
-          instagram: "https://instagram.com/hridaya_khare"
-        }
+          instagram: "https://instagram.com/hridaya_khare",
+        },
       },
       {
         name: "Prachi Sonawane",
         role: "Member",
-        quote: "When design meets passion, simple spaces transform into unforgettable emotional experiences.",
+        quote:
+          "When design meets passion, simple spaces transform into unforgettable emotional experiences.",
         image: prachiImg,
         social: {
           linkedin: "https://www.linkedin.com/in/prachi-sonawane-025703296",
-          instagram: "https://www.instagram.com/prachi_.09._"
-        }
+          instagram: "https://www.instagram.com/prachi_.09._",
+        },
       },
       {
         name: "Abhishek Chopade",
         role: "Member",
-        quote: "It is the quiet, meticulous craftsmanship behind the scenes that turns bold blueprints into reality.",
+        quote:
+          "It is the quiet, meticulous craftsmanship behind the scenes that turns bold blueprints into reality.",
         image: abhijeetImg,
         social: {
-          instagram: "https://www.instagram.com/aabhiibee?dlrf=aW96d29ycnk3OG1n"
-        }
+          instagram:
+            "https://www.instagram.com/aabhiibee?dlrf=aW96d29ycnk3OG1n",
+        },
       },
       {
         name: "Parth Devi",
         role: "Member",
-        quote: "Art is not what you see, but what you invite others to discover within themselves.",
+        quote:
+          "Art is not what you see, but what you invite others to discover within themselves.",
         image: parthImg,
         social: {
           linkedin: "https://www.linkedin.com/in/parth-devi-9038322a1",
-          instagram: "https://instagram.com/parth_devi"
-        }
-      }
-    ]
+          instagram: "https://instagram.com/parth_devi",
+        },
+      },
+    ],
   },
   lno: {
     title: "Logistics & Operations",
@@ -229,90 +242,99 @@ const committeeTeamsData = {
       {
         name: "Sukrut Angal",
         role: "Lead",
-        quote: "Flawless execution is when complex coordination feels completely invisible to the audience.",
+        quote:
+          "Flawless execution is when complex coordination feels completely invisible to the audience.",
         image: sukrutImg,
         social: {
           linkedin: "https://www.linkedin.com/in/sukrut-angal-a40b10290",
-          instagram: "https://www.instagram.com/sukrut__07"
-        }
+          instagram: "https://www.instagram.com/sukrut__07",
+        },
       },
       {
         name: "Atharva Gore",
         role: "Lead",
-        quote: "Mastery of logistics lies in anticipating the unpredictable and remaining calm at the center of momentum.",
+        quote:
+          "Mastery of logistics lies in anticipating the unpredictable and remaining calm at the center of momentum.",
         image: atharvaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/atharvagore22",
-          instagram: "https://www.instagram.com/gore.atharv_"
-        }
+          instagram: "https://www.instagram.com/gore.atharv_",
+        },
       },
       {
         name: "Shreeya Nene",
         role: "Member",
-        quote: "The strength of an engine lies in every single gear turning with purpose and synchrony.",
+        quote:
+          "The strength of an engine lies in every single gear turning with purpose and synchrony.",
         image: shreeyaImg,
         social: {
-          instagram: "https://instagram.com/Shreeya_nene"
-        }
+          instagram: "https://instagram.com/Shreeya_nene",
+        },
       },
       {
         name: "Ayush Janunkar",
         role: "Member",
-        quote: "Action speaks louder when supported by quick instincts and unwavering composure.",
+        quote:
+          "Action speaks louder when supported by quick instincts and unwavering composure.",
         image: ayushImg,
         social: {
           linkedin: "https://in.linkedin.com/in/ayush-janunkar-a8bab4385",
-          instagram: "https://instagram.com/ayushj_4058"
-        }
+          instagram: "https://instagram.com/ayushj_4058",
+        },
       },
       {
         name: "Varad Mogle",
         role: "Member",
-        quote: "Patience, persistence, and proactive problem-solving turn potential hurdles into stepping stones.",
+        quote:
+          "Patience, persistence, and proactive problem-solving turn potential hurdles into stepping stones.",
         image: varadImg,
         social: {
-          instagram: "https://instagram.com/varadm.21"
-        }
+          instagram: "https://instagram.com/varadm.21",
+        },
       },
       {
         name: "Prajwal Adasul",
         role: "Member",
-        quote: "Excellence is not an act of chance; it is a habit born of rigorous dedication behind the curtain.",
+        quote:
+          "Excellence is not an act of chance; it is a habit born of rigorous dedication behind the curtain.",
         image: prajwalImg,
         social: {
-          instagram: "https://www.instagram.com/praj_wal___04"
-        }
+          instagram: "https://www.instagram.com/praj_wal___04",
+        },
       },
       {
         name: "Samiha Aserkar",
         role: "Member",
-        quote: "Hospitality and seamless logistics create the sanctuary where inspiration can truly take root.",
+        quote:
+          "Hospitality and seamless logistics create the sanctuary where inspiration can truly take root.",
         image: samihaImg,
         social: {
-          instagram: "https://instagram.com/samihaaserkar"
-        }
+          instagram: "https://instagram.com/samihaaserkar",
+        },
       },
       {
         name: "Rushikesh Kandalkar",
         role: "Member",
-        quote: "Timing is everything; when every moving part aligns, the magic of the moment becomes inevitable.",
+        quote:
+          "Timing is everything; when every moving part aligns, the magic of the moment becomes inevitable.",
         image: rushikeshImg,
         social: {
           linkedin: "https://www.linkedin.com/in/rushikesh-kandalkar-030589256",
-          instagram: "https://www.instagram.com/ft.rushikeshh"
-        }
+          instagram: "https://www.instagram.com/ft.rushikeshh",
+        },
       },
       {
         name: "Maitreyee Prayag",
         role: "Member",
-        quote: "Great achievements are built on small, relentless commitments honored every single day.",
+        quote:
+          "Great achievements are built on small, relentless commitments honored every single day.",
         image: maitreyeeImg,
         social: {
           linkedin: "https://www.linkedin.com/in/maitreyee-prayag-97239538b",
-          instagram: "https://www.instagram.com/maitreyee_prayag"
-        }
-      }
-    ]
+          instagram: "https://www.instagram.com/maitreyee_prayag",
+        },
+      },
+    ],
   },
   editorial: {
     title: "Editorial",
@@ -321,75 +343,82 @@ const committeeTeamsData = {
       {
         name: "Hiya Pantvaidya",
         role: "Lead",
-        quote: "Words possess the quiet power to unearth truths, bridge chasms, and ignite timeless curiosity.",
+        quote:
+          "Words possess the quiet power to unearth truths, bridge chasms, and ignite timeless curiosity.",
         image: hiyaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/hiya-pantvaidya-8a7058332",
           instagram: "https://www.instagram.com/hiyaaa_007",
-          portfolio: "relentlesslycravingsummer.tumblr.com"
-        }
+          portfolio: "relentlesslycravingsummer.tumblr.com",
+        },
       },
       {
         name: "Maitreyee Bhave",
         role: "Lead",
-        quote: "To tell a story is to hold up a mirror to the human spirit and remind us of who we can become.",
+        quote:
+          "To tell a story is to hold up a mirror to the human spirit and remind us of who we can become.",
         image: maitreyeeBhaveImg,
         social: {
           linkedin: "https://www.linkedin.com/in/maitreyee-bhave-369a86249/",
           instagram: "https://www.instagram.com/mxitreyee._",
-          portfolio: "https://aquapigmentus.substack.com/"
-        }
+          portfolio: "https://aquapigmentus.substack.com/",
+        },
       },
       {
         name: "Renuka Joshi",
         role: "Member",
-        quote: "A well-chosen phrase can linger in the mind long after the applause has faded into silence.",
+        quote:
+          "A well-chosen phrase can linger in the mind long after the applause has faded into silence.",
         image: renukaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/renuka-joshi-430541290/",
-          instagram: "https://www.instagram.com/renuka__"
-        }
+          instagram: "https://www.instagram.com/renuka__",
+        },
       },
       {
         name: "Yashashri Rajput",
         role: "Member",
-        quote: "Curiosity is the compass that guides our pens to stories waiting in the quiet margins.",
+        quote:
+          "Curiosity is the compass that guides our pens to stories waiting in the quiet margins.",
         image: yashashriImg,
         social: {
           linkedin: "https://www.linkedin.com/in/yashashri-rajput",
-          instagram: "https://instagram.com/whalin.52yr"
-        }
+          instagram: "https://instagram.com/whalin.52yr",
+        },
       },
       {
         name: "Lavanya Kurapati",
         role: "Member",
-        quote: "Clarity of thought breeds clarity of expression, making the complex beautifully accessible.",
+        quote:
+          "Clarity of thought breeds clarity of expression, making the complex beautifully accessible.",
         image: lavanyaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/lavanya-kurapati-a2550b295",
-          instagram: "https://www.instagram.com/lavanya.0502"
-        }
+          instagram: "https://www.instagram.com/lavanya.0502",
+        },
       },
       {
         name: "Swara Kulkarni",
         role: "Member",
-        quote: "Every voice has a frequency; our craft is tuning them into an unforgettable symphony of ideas.",
+        quote:
+          "Every voice has a frequency; our craft is tuning them into an unforgettable symphony of ideas.",
         image: swaraImg,
         social: {
           linkedin: "https://in.linkedin.com/in/swara-kulkarni-052539383",
-          instagram: "https://www.instagram.com/coolkarniswara"
-        }
+          instagram: "https://www.instagram.com/coolkarniswara",
+        },
       },
       {
         name: "Siddhi Munot",
         role: "Member",
-        quote: "The most profound thoughts often speak in whispers; we simply give them the resonance they deserve.",
+        quote:
+          "The most profound thoughts often speak in whispers; we simply give them the resonance they deserve.",
         image: siddhiMunotImg,
         social: {
-          instagram: "https://instagram.com/_.winterlilyy"
-        }
-      }
-    ]
+          instagram: "https://instagram.com/_.winterlilyy",
+        },
+      },
+    ],
   },
   fns: {
     title: "Finance & Sponsorship",
@@ -398,66 +427,73 @@ const committeeTeamsData = {
       {
         name: "Ritika Paradkar",
         role: "Lead",
-        quote: "Strategic alliances are forged on mutual trust, shared values, and long-term vision.",
+        quote:
+          "Strategic alliances are forged on mutual trust, shared values, and long-term vision.",
         image: ritikaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/ritika-paradkar-6aa9b1322",
-          instagram: "https://www.instagram.com/ritikaaa.1111"
-        }
+          instagram: "https://www.instagram.com/ritikaaa.1111",
+        },
       },
       {
         name: "Durga Gunjal",
         role: "Member",
-        quote: "Building genuine relationships is the cornerstone of sustainable growth and enduring value.",
+        quote:
+          "Building genuine relationships is the cornerstone of sustainable growth and enduring value.",
         image: durgaImg,
         social: {
-          instagram: "https://instagram.com/durga_gunjal"
-        }
+          instagram: "https://instagram.com/durga_gunjal",
+        },
       },
       {
         name: "Siddhi Patil",
         role: "Member",
-        quote: "Integrity in resource management is what empowers bold creative dreams to stand tall.",
+        quote:
+          "Integrity in resource management is what empowers bold creative dreams to stand tall.",
         image: siddhiPatilImg,
         social: {
           linkedin: "https://www.linkedin.com/in/siddhi-patil-1a049b369",
           //   instagram: "https://instagram.com"
-        }
+        },
       },
       {
         name: "Mayuresh Shevlikar",
         role: "Member",
-        quote: "True value is created when shared purpose replaces transactional conversations.",
+        quote:
+          "True value is created when shared purpose replaces transactional conversations.",
         image: mayureshImg,
         social: {
           linkedin: "https://www.linkedin.com/in/mayuresh-shevlikar-a8aa67297",
-          instagram: "https://instagram.com/mayureshshevlikar"
-        }
+          instagram: "https://instagram.com/mayureshshevlikar",
+        },
       },
       {
         name: "Varad Athalye",
         role: "Member",
-        quote: "Every pitch is a bridge built between two worlds driven by a common desire to make an impact.",
+        quote:
+          "Every pitch is a bridge built between two worlds driven by a common desire to make an impact.",
         image: varadAthalyeImg,
         social: {
           linkedin: "https://www.linkedin.com/in/varad-athalye-30a692313/",
-          instagram: "https://www.instagram.com/itsyourboishiro/"
-        }
+          instagram: "https://www.instagram.com/itsyourboishiro/",
+        },
       },
       {
         name: "Avadhoot Amrale",
         role: "Member",
-        quote: "Precision in figures provides the sturdy foundation upon which extraordinary experiences are built.",
+        quote:
+          "Precision in figures provides the sturdy foundation upon which extraordinary experiences are built.",
         image: avadhootImg,
         social: {
           linkedin: "https://www.linkedin.com/in/avadhoot-amrale-029454316",
-          instagram: "https://www.instagram.com/aloneonthe_run"
-        }
+          instagram: "https://www.instagram.com/aloneonthe_run",
+        },
       },
       {
         name: "Pratham Verma",
         role: "Member",
-        quote: "Perseverance in outreach turns tentative doors into wide-open gateways of opportunity.",
+        quote:
+          "Perseverance in outreach turns tentative doors into wide-open gateways of opportunity.",
         image: prathamImg,
         // social: {
         //   linkedin: "https://linkedin.com",
@@ -467,14 +503,15 @@ const committeeTeamsData = {
       {
         name: "Swaraj Awad",
         role: "Member",
-        quote: "Accountability and foresight convert creative aspirations into achievable milestones.",
+        quote:
+          "Accountability and foresight convert creative aspirations into achievable milestones.",
         image: swarajImg,
         // social: {
         //   linkedin: "https://linkedin.com",
         //   instagram: "https://instagram.com"
         // }
-      }
-    ]
+      },
+    ],
   },
   mnm: {
     title: "Media & Marketing",
@@ -483,74 +520,83 @@ const committeeTeamsData = {
       {
         name: "Atharva Joshi",
         role: "Lead",
-        quote: "A single lens can capture an emotion, but thoughtful storytelling makes it echo across generations.",
+        quote:
+          "A single lens can capture an emotion, but thoughtful storytelling makes it echo across generations.",
         image: atharvaJoshiImg,
         social: {
           linkedin: "https://www.linkedin.com/in/atharva-joshi-786200290/",
           instagram: "https://www.instagram.com/ajcliks",
-          portfolio: "https://atharvaportfolio.carrd.co/"
-        }
+          portfolio: "https://atharvaportfolio.carrd.co/",
+        },
       },
       {
         name: "Aariya Vora",
         role: "Lead",
-        quote: "Marketing isn’t about making noise; it’s about making a connection that stirs the soul.",
+        quote:
+          "Marketing isn’t about making noise; it’s about making a connection that stirs the soul.",
         image: aariyaImg,
         social: {
-          linkedin: "https://www.linkedin.com/in/aariya-harshad-vora-6b8755312/",
-          instagram: "https://instagram.com/aariya_vora"
-        }
+          linkedin:
+            "https://www.linkedin.com/in/aariya-harshad-vora-6b8755312/",
+          instagram: "https://instagram.com/aariya_vora",
+        },
       },
       {
         name: "Neeraj Chaini",
         role: "Member",
-        quote: "In a world of fleeting attention, authenticity is the only currency that never depreciates.",
+        quote:
+          "In a world of fleeting attention, authenticity is the only currency that never depreciates.",
         image: neerajImg,
         social: {
           linkedin: "https://www.linkedin.com/in/neeraj-chaini-012615390",
-          instagram: "https://www.instagram.com/seeneerajc"
-        }
+          instagram: "https://www.instagram.com/seeneerajc",
+        },
       },
       {
         name: "Gaurav Gore",
         role: "Member",
-        quote: "Freezing a raw, unscripted moment of revelation is where the art of photography truly lives.",
+        quote:
+          "Freezing a raw, unscripted moment of revelation is where the art of photography truly lives.",
         image: gauravImg,
         social: {
           linkedin: "https://www.linkedin.com/in/gaurav-gore-037513383/",
-          instagram: "https://instagram.com/gaurav.jpg_"
-        }
+          instagram: "https://instagram.com/gaurav.jpg_",
+        },
       },
       {
         name: "Siddhant Pawar",
         role: "Member",
-        quote: "Digital sparks become raging movements when fueled by shared ideals and genuine empathy.",
+        quote:
+          "Digital sparks become raging movements when fueled by shared ideals and genuine empathy.",
         image: siddhantImg,
         social: {
           linkedin: "https://www.linkedin.com/in/siddhant-pawar-a232a2398",
-          instagram: "https://instagram.com/_siddhantttttt"
-        }
+          instagram: "https://instagram.com/_siddhantttttt",
+        },
       },
       {
         name: "Sumedh Kuchanwar",
         role: "Member",
-        quote: "Engaging an audience starts with listening closely to what they yearn to believe in.",
+        quote:
+          "Engaging an audience starts with listening closely to what they yearn to believe in.",
         image: sumedhImg,
         social: {
           linkedin: "https://www.linkedin.com/in/sumedh-kuchanwar",
-          instagram: "https://www.instagram.com/sumedh.ftw?srtk=ZDF4NDdoMmlkMHZp"
-        }
+          instagram:
+            "https://www.instagram.com/sumedh.ftw?srtk=ZDF4NDdoMmlkMHZp",
+        },
       },
       {
         name: "Krutika Devare",
         role: "Member",
-        quote: "Crafting a brand presence is about planting seeds of curiosity that blossom into loyal communities.",
+        quote:
+          "Crafting a brand presence is about planting seeds of curiosity that blossom into loyal communities.",
         image: krutikaImg,
         social: {
-          linkedin: "https://www.linkedin.com/in/krutika-devare-b58331371"
-        }
-      }
-    ]
+          linkedin: "https://www.linkedin.com/in/krutika-devare-b58331371",
+        },
+      },
+    ],
   },
   curation: {
     title: "Curation",
@@ -559,83 +605,91 @@ const committeeTeamsData = {
       {
         name: "Narayani Jalgaonkar",
         role: "Lead",
-        quote: "The search for revolutionary ideas is a journey into the uncharted depths of human potential.",
+        quote:
+          "The search for revolutionary ideas is a journey into the uncharted depths of human potential.",
         image: narayaniImg,
         social: {
           linkedin: "https://www.linkedin.com/in/narayani-j-b5081936a/",
-          instagram: "https://www.instagram.com/narayani_02"
-        }
+          instagram: "https://www.instagram.com/narayani_02",
+        },
       },
       {
         name: "Rugveda Dhole",
         role: "Lead",
-        quote: "A great talk doesn’t just convey information; it shifts the paradigm of everyone in the room.",
+        quote:
+          "A great talk doesn’t just convey information; it shifts the paradigm of everyone in the room.",
         image: rugvedaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/rugveda-dhole-7a7052324/",
-          instagram: "https://www.instagram.com/rug_veda2020"
-        }
+          instagram: "https://www.instagram.com/rug_veda2020",
+        },
       },
       {
         name: "Fanaa Jain",
         role: "Member",
-        quote: "Unearthing raw, unconventional wisdom requires peeling back layers of the conventional.",
+        quote:
+          "Unearthing raw, unconventional wisdom requires peeling back layers of the conventional.",
         image: fanaaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/fanaa-jain-71a380374",
-          instagram: "https://instagram.com/fanaajain"
-        }
+          instagram: "https://instagram.com/fanaajain",
+        },
       },
       {
         name: "Samiksha Jadhav",
         role: "Member",
-        quote: "When passion meets preparation, the speaker’s voice becomes a catalyst for collective awakening.",
+        quote:
+          "When passion meets preparation, the speaker’s voice becomes a catalyst for collective awakening.",
         image: samikshaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/samiksha-jadhav-1b2998339",
-          instagram: "https://www.instagram.com/samikshaj._"
-        }
+          instagram: "https://www.instagram.com/samikshaj._",
+        },
       },
       {
         name: "Nachiket Bedekar",
         role: "Member",
-        quote: "Every genuine idea worth spreading carries within it the seed of a future yet unimagined.",
+        quote:
+          "Every genuine idea worth spreading carries within it the seed of a future yet unimagined.",
         image: nachiketImg,
         social: {
           linkedin: "https://www.linkedin.com/in/nachiket-bedekar-63bb39349",
-          instagram: "https://instagram.com/spade_162"
-        }
+          instagram: "https://instagram.com/spade_162",
+        },
       },
       {
         name: "Shrinand Joshi",
         role: "Member",
-        quote: "Refining a speaker’s message is like polishing a gem until its inner radiance becomes unmistakable.",
+        quote:
+          "Refining a speaker’s message is like polishing a gem until its inner radiance becomes unmistakable.",
         image: shrinandImg,
         social: {
           linkedin: "https://www.linkedin.com/in/shrinand-joshi-616229330",
-          instagram: "https://www.instagram.com/shrinandj_12"
-        }
+          instagram: "https://www.instagram.com/shrinandj_12",
+        },
       },
       {
         name: "Hardik Mhetre",
         role: "Member",
-        quote: "Curiosity is the courage to ask questions that challenge comfortable consensus.",
+        quote:
+          "Curiosity is the courage to ask questions that challenge comfortable consensus.",
         image: hardikImg,
         social: {
-          instagram: "https://www.instagram.com/hrdkm"
-        }
+          instagram: "https://www.instagram.com/hrdkm",
+        },
       },
       {
         name: "Ved Purohit",
         role: "Member",
-        quote: "The most electrifying moments happen when intellect and human vulnerability intersect.",
+        quote:
+          "The most electrifying moments happen when intellect and human vulnerability intersect.",
         image: vedImg,
         social: {
           linkedin: "https://www.linkedin.com/in/ved-vivek-purohit-592802338/",
-          instagram: "https://www.instagram.com/ved_vadak04"
-        }
-      }
-    ]
+          instagram: "https://www.instagram.com/ved_vadak04",
+        },
+      },
+    ],
   },
   technical: {
     title: "Technical",
@@ -644,56 +698,61 @@ const committeeTeamsData = {
       {
         name: "Jagdish Prajapati",
         role: "Lead",
-        quote: "Behind every seamless digital experience is an obsession with craft, architecture, and code elegance.",
+        quote:
+          "Behind every seamless digital experience is an obsession with craft, architecture, and code elegance.",
         image: jagdishImg,
         social: {
           linkedin: "https://www.linkedin.com/in/jagdish-15-prajapati/",
           instagram: "https://instagram.com/jagdish15p",
-          portfolio: "https://exercism.org/profiles/jagdishdrp"
-        }
+          portfolio: "https://exercism.org/profiles/jagdishdrp",
+        },
       },
       {
         name: "Aditya Kulkarni",
         role: "Member",
-        quote: "Technology reaches its zenith when complex engineering manifests as sheer simplicity to the user.",
+        quote:
+          "Technology reaches its zenith when complex engineering manifests as sheer simplicity to the user.",
         image: adityaImg,
         social: {
           linkedin: "https://www.linkedin.com/in/aditya-kulkarni-44b8162a7",
-          instagram: "https://www.instagram.com/aditya_k5106"
-        }
+          instagram: "https://www.instagram.com/aditya_k5106",
+        },
       },
       {
         name: "Saanidhi Gade",
         role: "Member",
-        quote: "Code is our modern canvas; with logic and creativity, we breathe life into static pixels.",
+        quote:
+          "Code is our modern canvas; with logic and creativity, we breathe life into static pixels.",
         image: saanidhiImg,
         social: {
           linkedin: "https://www.linkedin.com/in/saanidhi-gade",
-          instagram: "https://instagram.com/_.saanidhi._"
-        }
+          instagram: "https://instagram.com/_.saanidhi._",
+        },
       },
       {
         name: "Vedant Yeole",
         role: "Member",
-        quote: "Building the digital frontier of TEDx is about turning every click into an inspiring discovery.",
+        quote:
+          "Building the digital frontier of TEDx is about turning every click into an inspiring discovery.",
         image: vedantImg,
         social: {
           linkedin: "https://www.linkedin.com/in/vedant-yeole-1442322a7",
-          instagram: "https://www.instagram.com/v3dant.yeole"
-        }
+          instagram: "https://www.instagram.com/v3dant.yeole",
+        },
       },
       {
         name: "Soham Katkar",
         role: "Member",
-        quote: "Robust systems are forged in the quiet details, ensuring ideas travel without disruption.",
+        quote:
+          "Robust systems are forged in the quiet details, ensuring ideas travel without disruption.",
         image: sohamImg,
         social: {
           linkedin: "https://www.linkedin.com/in/soham-katkar-587965353",
-          instagram: "https://www.instagram.com/s0ham_katkar"
-        }
-      }
-    ]
-  }
+          instagram: "https://www.instagram.com/s0ham_katkar",
+        },
+      },
+    ],
+  },
 };
 
 const teamImages = [
@@ -704,7 +763,7 @@ const teamImages = [
   { id: "fns", src: fnsImg, alt: "Finance and Sponsorship" },
   { id: "mnm", src: mnmImg, alt: "Media and Marketing" },
   { id: "curation", src: curImg, alt: "Curation" },
-  { id: "technical", src: techImg, alt: "Technical" }
+  { id: "technical", src: techImg, alt: "Technical" },
 ];
 
 const TedxPvgcoetm = () => (
@@ -728,7 +787,7 @@ const DustParticles = () => {
             animationDelay: `-${Math.random() * 20}s`,
             width: `${Math.random() * 4 + 1}px`,
             height: `${Math.random() * 4 + 1}px`,
-            opacity: Math.random() * 0.4 + 0.1
+            opacity: Math.random() * 0.4 + 0.1,
           }}
         ></div>
       ))}
@@ -760,7 +819,7 @@ const NewTeam = () => {
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" },
     );
 
     currentRefs.forEach((el) => {
@@ -790,7 +849,10 @@ const NewTeam = () => {
       }
       const w = window.innerWidth;
       const currentTeam = committeeTeamsData[expandedTeamId];
-      const maxForTeam = currentTeam && currentTeam.members.length > 0 ? currentTeam.members.length : 4;
+      const maxForTeam =
+        currentTeam && currentTeam.members.length > 0
+          ? currentTeam.members.length
+          : 4;
       if (w >= 1200) setGridColumns(Math.min(4, maxForTeam));
       else if (w >= 900) setGridColumns(Math.min(3, maxForTeam));
       else if (w >= 600) setGridColumns(Math.min(2, maxForTeam));
@@ -841,7 +903,9 @@ const NewTeam = () => {
       const next = prev === memberKey ? null : memberKey;
       if (next) {
         setTimeout(() => {
-          const tabEl = document.getElementById(`member-big-info-tab-${expandedTeamId}`);
+          const tabEl = document.getElementById(
+            `member-big-info-tab-${expandedTeamId}`,
+          );
           if (tabEl) {
             const rect = tabEl.getBoundingClientRect();
             if (rect.bottom > window.innerHeight) {
@@ -885,7 +949,8 @@ const NewTeam = () => {
       {/* Hero section */}
       <section className="new-committee-hero">
         <h1 className="hero-text animate-text">
-          <span className="hero-line1">The pieces that</span><br />
+          <span className="hero-line1">The pieces that</span>
+          <br />
           <span className="hero-line2">make the whole</span>
         </h1>
       </section>
@@ -898,15 +963,16 @@ const NewTeam = () => {
           const currentTeamData = committeeTeamsData[team.id] || {
             title: team.alt,
             kicker: "DEPARTMENT TEAM",
-            members: []
+            members: [],
           };
 
           return (
             <div
               key={team.id}
               data-team-id={team.id}
-              className={`new-committee-img-container ${isAnimated ? "animate-fade-in" : ""
-                } ${isExpanded ? "is-showcase-expanded" : ""}`}
+              className={`new-committee-img-container ${
+                isAnimated ? "animate-fade-in" : ""
+              } ${isExpanded ? "is-showcase-expanded" : ""}`}
               ref={(el) => (imageRefs.current[index] = el)}
             >
               {/* Image Frame Wrapper - Clickable for all teams */}
@@ -928,8 +994,9 @@ const NewTeam = () => {
                 <img
                   src={team.src}
                   alt={team.alt}
-                  className={`new-committee-img ${isExpanded ? "full-color-expanded" : ""
-                    }`}
+                  className={`new-committee-img ${
+                    isExpanded ? "full-color-expanded" : ""
+                  }`}
                   loading="lazy"
                 />
               </div>
@@ -947,29 +1014,33 @@ const NewTeam = () => {
 
                   {/* Compact Info Cards (Small at first) with inline expandable row */}
                   <div
-                    className={`compact-members-grid ${currentTeamData.members.length <= 3
-                      ? `members-grid-${currentTeamData.members.length}`
-                      : ""
-                      }`}
+                    className={`compact-members-grid ${
+                      currentTeamData.members.length <= 3
+                        ? `members-grid-${currentTeamData.members.length}`
+                        : ""
+                    }`}
                     ref={membersGridRef}
                   >
                     {(() => {
-                      const activeMemberIndex = currentTeamData.members.findIndex(
-                        (m) => `${team.id}-${m.name}` === expandedMemberKey
-                      );
+                      const activeMemberIndex =
+                        currentTeamData.members.findIndex(
+                          (m) => `${team.id}-${m.name}` === expandedMemberKey,
+                        );
                       const defaultCols =
                         currentTeamData.members.length <= 3
                           ? currentTeamData.members.length
                           : 4;
                       const cols = gridColumns || defaultCols;
                       const activeRow =
-                        activeMemberIndex >= 0 ? Math.floor(activeMemberIndex / cols) : -1;
+                        activeMemberIndex >= 0
+                          ? Math.floor(activeMemberIndex / cols)
+                          : -1;
                       const insertionIndex =
                         activeMemberIndex >= 0
                           ? Math.min(
-                            (activeRow + 1) * cols - 1,
-                            currentTeamData.members.length - 1
-                          )
+                              (activeRow + 1) * cols - 1,
+                              currentTeamData.members.length - 1,
+                            )
                           : -1;
                       const activeMember =
                         activeMemberIndex >= 0
@@ -978,7 +1049,8 @@ const NewTeam = () => {
 
                       return currentTeamData.members.map((member, idx) => {
                         const memberKey = `${team.id}-${member.name}`;
-                        const isMemberExpanded = expandedMemberKey === memberKey;
+                        const isMemberExpanded =
+                          expandedMemberKey === memberKey;
                         const avatarSrc = member.image || defaultUserAvatar;
                         const memberCardId = `member-card-${team.id}-${member.name
                           .toLowerCase()
@@ -988,8 +1060,9 @@ const NewTeam = () => {
                           <React.Fragment key={member.name}>
                             <div
                               id={memberCardId}
-                              className={`member-card-compact ${isMemberExpanded ? "is-selected-card" : ""
-                                }`}
+                              className={`member-card-compact ${
+                                isMemberExpanded ? "is-selected-card" : ""
+                              }`}
                               onClick={() => handleSelectMember(memberKey)}
                               role="button"
                               tabIndex={0}
@@ -1014,7 +1087,9 @@ const NewTeam = () => {
 
                               <div className="compact-info">
                                 <h4 className="compact-name">{member.name}</h4>
-                                <span className="compact-role">{member.role}</span>
+                                <span className="compact-role">
+                                  {member.role}
+                                </span>
 
                                 {/* Social Links revealed on hover */}
                                 <div className="compact-social-links">
@@ -1049,8 +1124,12 @@ const NewTeam = () => {
                                   {member.social?.portfolio && (
                                     <a
                                       href={
-                                        member.social.portfolio.startsWith("http://") ||
-                                          member.social.portfolio.startsWith("https://")
+                                        member.social.portfolio.startsWith(
+                                          "http://",
+                                        ) ||
+                                        member.social.portfolio.startsWith(
+                                          "https://",
+                                        )
                                           ? member.social.portfolio
                                           : `https://${member.social.portfolio}`
                                       }
@@ -1070,11 +1149,13 @@ const NewTeam = () => {
                                 <span className="compact-action-hint">
                                   {isMemberExpanded ? (
                                     <>
-                                      Active Profile <FaChevronUp className="hint-arrow" />
+                                      Active Profile{" "}
+                                      <FaChevronUp className="hint-arrow" />
                                     </>
                                   ) : (
                                     <>
-                                      View Details <FaChevronDown className="hint-arrow" />
+                                      View Details{" "}
+                                      <FaChevronDown className="hint-arrow" />
                                     </>
                                   )}
                                 </span>
@@ -1104,7 +1185,10 @@ const NewTeam = () => {
                                     <div className="big-tab-avatar-col">
                                       <div className="big-tab-avatar-frame">
                                         <img
-                                          src={activeMember.image || defaultUserAvatar}
+                                          src={
+                                            activeMember.image ||
+                                            defaultUserAvatar
+                                          }
                                           alt={activeMember.name}
                                           className="big-tab-avatar"
                                         />
@@ -1118,7 +1202,9 @@ const NewTeam = () => {
                                       <div className="big-tab-department-tag">
                                         {currentTeamData.title.toUpperCase()}
                                       </div>
-                                      <h3 className="big-tab-name">{activeMember.name}</h3>
+                                      <h3 className="big-tab-name">
+                                        {activeMember.name}
+                                      </h3>
                                       <div className="big-tab-role-badge">
                                         {activeMember.role}
                                       </div>
@@ -1149,8 +1235,12 @@ const NewTeam = () => {
                                         {activeMember.social?.portfolio && (
                                           <a
                                             href={
-                                              activeMember.social.portfolio.startsWith("http://") ||
-                                                activeMember.social.portfolio.startsWith("https://")
+                                              activeMember.social.portfolio.startsWith(
+                                                "http://",
+                                              ) ||
+                                              activeMember.social.portfolio.startsWith(
+                                                "https://",
+                                              )
                                                 ? activeMember.social.portfolio
                                                 : `https://${activeMember.social.portfolio}`
                                             }
@@ -1167,27 +1257,40 @@ const NewTeam = () => {
                                   </div>
 
                                   {/* Subtle Vertical Divider */}
-                                  <div className="big-tab-divider" aria-hidden="true"></div>
+                                  <div
+                                    className="big-tab-divider"
+                                    aria-hidden="true"
+                                  ></div>
 
                                   {/* Cinematic Editorial & Theme Showcase Column */}
                                   <div className="big-tab-editorial-col">
                                     {/* Ambient Glowing TEDx "X" Monogram */}
-                                    <div className="editorial-watermark-x" aria-hidden="true">
+                                    <div
+                                      className="editorial-watermark-x"
+                                      aria-hidden="true"
+                                    >
                                       <span>X</span>
                                     </div>
 
                                     <div className="editorial-content">
                                       <div className="editorial-badge">
                                         <span className="editorial-pulse-dot"></span>
-                                        <span className="editorial-kicker">CHAPTER ESSENCE</span>
+                                        <span className="editorial-kicker">
+                                          CHAPTER ESSENCE
+                                        </span>
                                       </div>
 
                                       <blockquote className="editorial-quote">
-                                        “{activeMember.quote || "Ideas that provoke thought, inspire change, and shape tomorrow."}”
+                                        “
+                                        {activeMember.quote ||
+                                          "Ideas that provoke thought, inspire change, and shape tomorrow."}
+                                        ”
                                       </blockquote>
 
                                       <div className="editorial-footer">
-                                        <div className="editorial-theme-title">The Pieces That Make The Whole</div>
+                                        <div className="editorial-theme-title">
+                                          The Pieces That Make The Whole
+                                        </div>
                                         <div className="editorial-subtext">
                                           <TedxPvgcoetm /> • 2026 EDITION
                                         </div>
