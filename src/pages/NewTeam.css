@@ -1505,6 +1505,88 @@
   .new-committee-img {
     border-radius: 8px;
   }
+
+  /* --- Mobile-Only Big Tab Adjustments --- */
+  /* Hide quotes / editorial showcase on mobile */
+  .big-tab-editorial-col {
+    display: none !important;
+  }
+
+  .big-tab-divider {
+    display: none !important;
+  }
+
+  /* Social links: display only icons in mobile view */
+  .big-tab-actions {
+    gap: 0.9rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+
+  .big-tab-actions .social-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 !important;
+  }
+
+  .big-tab-actions .social-btn span {
+    display: none !important;
+  }
+
+  .big-tab-actions .social-btn .btn-icon {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .member-big-tab-container {
+    padding: 2.2rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .big-tab-avatar-frame {
+    width: 140px;
+    height: 140px;
+    border-radius: 18px;
+  }
+
+  .big-tab-name {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .member-big-tab-container {
+    padding: 1.8rem 1rem;
+    border-radius: 14px;
+  }
+
+  .big-tab-avatar-frame {
+    width: 125px;
+    height: 125px;
+    border-radius: 16px;
+  }
+
+  .big-tab-name {
+    font-size: 1.6rem;
+  }
+
+  .big-tab-actions {
+    gap: 0.75rem;
+  }
+
+  .big-tab-actions .social-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .big-tab-actions .social-btn .btn-icon {
+    font-size: 1.15rem;
+  }
 }
 
 /* Floating Dust Particles */

@@ -1216,6 +1216,8 @@ const NewTeam = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="social-btn linkedin-btn"
+                                            title="LinkedIn"
+                                            aria-label={`${activeMember.name}'s LinkedIn`}
                                           >
                                             <FaLinkedin className="btn-icon" />
                                             <span>LinkedIn</span>
@@ -1227,6 +1229,8 @@ const NewTeam = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="social-btn instagram-btn"
+                                            title="Instagram"
+                                            aria-label={`${activeMember.name}'s Instagram`}
                                           >
                                             <FaInstagram className="btn-icon" />
                                             <span>Instagram</span>
@@ -1247,6 +1251,8 @@ const NewTeam = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="social-btn portfolio-btn"
+                                            title="Portfolio"
+                                            aria-label={`${activeMember.name}'s Portfolio`}
                                           >
                                             <FaBriefcase className="btn-icon" />
                                             <span>Portfolio</span>
